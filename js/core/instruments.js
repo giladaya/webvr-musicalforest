@@ -32,8 +32,15 @@ export const Instruments = [
         noteCount : NoteCount
     }),
 
+    // new Instrument({
+    //     name: 'voice',
+    //     color: 'green',
+    //     shape: 'triangles',
+    //     noteCount : NoteCount
+    // }),
+
     new Instrument({
-        name: 'voice',
+        name: 'bird',
         color: 'green',
         shape: 'triangles',
         noteCount : NoteCount
