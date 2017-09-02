@@ -190,8 +190,8 @@ const RATE_LIMIT_INFO   = {
 * NAME OF PRODUCTION ENVIRONMENT GCP PROJECT
 *******************************************************************************/
 
-const PRODUCTION_ENVIRONMENT_PROJECT_ID         = '<your-production-project-id>';
-const PRODUCTION_ENVIRONMENT_REQUIRED_ORIGIN    = '<your-production-frontend-hostname>';
+const PRODUCTION_ENVIRONMENT_PROJECT_ID         = 'webvr-forest-178611';
+const PRODUCTION_ENVIRONMENT_REQUIRED_ORIGIN    = 'localhost';
 
 /*******************************************************************************
 * EXPORT CONFIG
