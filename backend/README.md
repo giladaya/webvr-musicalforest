@@ -883,3 +883,19 @@ As in `SET_SPHERE_TONE`, clients don't need to hold a sphere to set its connecti
 As above, the server will send a `NON_EXISTENT_SPHERE` message if the specified sphere doesn't exist in the room.
 
 
+## Notes (GD)
+This worked for running the backend locally:
+1. If on mac, make sure to have full installation of xcode
+2. Do the steps as described above
+3. Setup in `backend/src/config.js`: 
+    - `PRODUCTION_ENVIRONMENT_PROJECT_ID` to the gcloud project ID
+    - `PRODUCTION_ENVIRONMENT_REQUIRED_ORIGIN` to 'localhost' 
+4. To run:
+    - Terminal 1: `gcloud beta emulators pubsub start --host-port=localhost:8082`  
+    - Terminal 2: `gcloud beta emulators datastore start  --host-port=localhost:8083`  
+    - Terminal 3 (in `/backend`): `npm run start_emulated`  
+    - Terminal 4 (in `/`): `npm start` (start the client)  
+5. Open in browser: `http://localhost:3000/?server=ws://localhost:9100`  
+
+Maybe this helped? `gcloud beta emulators datastore start --no-legacy`
+From: https://github.com/GoogleCloudPlatform/google-cloud-node/issues/1230
