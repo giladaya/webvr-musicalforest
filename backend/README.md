@@ -897,5 +897,8 @@ This worked for running the backend locally:
     - Terminal 4 (in `/`): `npm start` (start the client)  
 5. Open in browser: `http://localhost:3000/?server=ws://localhost:9100`  
 
+### Misc
 Maybe this helped? `gcloud beta emulators datastore start --no-legacy`
-From: https://github.com/GoogleCloudPlatform/google-cloud-node/issues/1230
+From: https://github.com/GoogleCloudPlatform/google-cloud-node/issues/1230  
+
+For more detailed logs, set `consoleOptions.level` to `debug` in `/backend/src/logger/index.js`
